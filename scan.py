@@ -13,7 +13,7 @@ def worker(target, port):
   finally: 
     s.close()
 
-if name == "main": 
+if __name__ == "__main__": 
   parser = argparse.ArgumentParser() 
   parser.add_argument("--target", required=True) 
   parser.add_argument("--port", type=int, required=True) 
